@@ -2,9 +2,9 @@ var searchBtnEl = $("#search-btn");
 var movieDetailsContainerEl = $("#movie-details-container");
 var comingsoonEl = $(".comingsoon-movies");
 
-$(document).ready(function() {
+$(document).ready(function () {
 
-function fetchAndDisplayMovies(comingsoon) {
+  function fetchAndDisplayMovies(comingsoon) {
     // URL for the API request
     var apiUrl = `https://api.themoviedb.org/3/movie/upcoming?api_key=b959be3036efe07cdd94c9fb04a40299`;
 
@@ -32,7 +32,7 @@ function fetchAndDisplayMovies(comingsoon) {
             var title = $("<h2>").text(movie.title);
             var description = $("<p>").text(movie.overview);
             var posterLink = $("<a>").attr("href", `movie-details.html?id=${movie.id}`);
-            
+
             var addToWatchlistBtn = $('<button class="add-to-watchlist-btn">Add to Watchlist</button>');
             addToWatchlistBtn.on("click", function () {
               addToWatchlist(movie);
@@ -41,7 +41,7 @@ function fetchAndDisplayMovies(comingsoon) {
             });
             // Append elements to the movie card
             movieCard.append(posterBox, detailsBox, addToWatchlistBtn);
-            posterBox.append(posterLink); 
+            posterBox.append(posterLink);
             posterLink.append(image);
             detailsBox.append(title);
             // Append the movie card to the container
@@ -83,8 +83,6 @@ function fetchAndDisplayMovies(comingsoon) {
     }
   }
 
-
   // Call the function when the page loads
   window.onload = fetchAndDisplayMovies(comingsoonEl);
-
 })

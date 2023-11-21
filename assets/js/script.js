@@ -18,9 +18,9 @@ var genreBtns = [
 ];
 
 // Execute code when the document is fully loaded
-$(document).ready(function() {
+$(document).ready(function () {
   // Attach a click event handler to the search button
-  searchBtnEl.on('click', function(event) {
+  searchBtnEl.on('click', function (event) {
     event.preventDefault(); // Prevent the default behavior of the button
 
     // Get the user's input for the movie name
@@ -30,14 +30,14 @@ $(document).ready(function() {
 
     // Fetch data from the API using the constructed URL
     fetch(requestUrl)
-      .then(function(response) {
+      .then(function (response) {
         if (response.status === 404) {
           // Handle 404 response
           throw new Error('Movie not found');
         }
         return response.json(); // Parse the response as JSON
       })
-      .then(function(data) {
+      .then(function (data) {
         console.log(data);
         // Check if there's a movie result
         if (data.results.length > 0) {
@@ -55,7 +55,7 @@ $(document).ready(function() {
           movieDetailsContainerEl.html('No movies found.');
         }
       })
-      .catch(function(err) {
+      .catch(function (err) {
         console.log(err.message); // Handle any errors, including 404
         if (err.message === 'Movie not found') {
           movieDetailsContainerEl.html('Movie not found.');
@@ -82,7 +82,7 @@ $(document).ready(function() {
     });
     // Append elements to the movie card
     movieCard.append(posterBox, detailsBox, addToWatchlistBtn);
-    posterBox.append(posterLink); 
+    posterBox.append(posterLink);
     posterLink.append(image);
     detailsBox.append(title);
     // Append the movie card to the container
@@ -118,7 +118,7 @@ $(document).ready(function() {
             var title = $("<h2>").text(movie.title);
             var description = $("<p>").text(movie.overview);
             var posterLink = $("<a>").attr("href", `movie-details.html?id=${movie.id}`);
-            
+
             var addToWatchlistBtn = $('<button class="add-to-watchlist-btn">Add to Watchlist</button>');
             addToWatchlistBtn.on("click", function () {
               addToWatchlist(movie);
@@ -127,7 +127,7 @@ $(document).ready(function() {
             });
             // Append elements to the movie card
             movieCard.append(posterBox, detailsBox, addToWatchlistBtn);
-            posterBox.append(posterLink); 
+            posterBox.append(posterLink);
             posterLink.append(image);
             detailsBox.append(title);
             // Append the movie card to the container
@@ -180,12 +180,12 @@ $(document).ready(function() {
       // Scroll to the target genre content section
       $('html, body').animate({
         scrollTop: $(movieGenresEl).offset().top
-      }, 10); 
+      }, 10);
     });
   });
 
   // Attach keyup event listener to the input field
-  $('#movie-name').on('keyup', function(event) {
+  $('#movie-name').on('keyup', function (event) {
     // Check if the pressed key is Enter (key code 13)
     if (event.keyCode === 13) {
       // Trigger the click event on the link

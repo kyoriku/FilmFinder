@@ -1,7 +1,7 @@
 // Ensure the document is fully loaded before executing the code
-$(document).ready(function() {
+$(document).ready(function () {
     // Attach a click event listener to the entire document
-    $(document).on("click", function(event) {
+    $(document).on("click", function (event) {
         // Check if the clicked element is not within the specified dropdowns
         if (!$(event.target).closest('#myDropdown, #dropdown-menu').length) {
             // If not, hide the dropdown menu
@@ -10,7 +10,7 @@ $(document).ready(function() {
     });
 
     // Attach a click event listener to the dropdown menu
-    $("#dropdown-menu").on("click", function(event) {
+    $("#dropdown-menu").on("click", function (event) {
         // Prevent the click event from propagating up the DOM to avoid triggering the document click event
         event.stopPropagation();
         // Call the menuFunction when dropdown-menu is clicked
