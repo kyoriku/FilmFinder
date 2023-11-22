@@ -8,6 +8,8 @@ The website draws your attentions upon loading with unique branding and engaging
 
 <strong>Tired of watching "The Office" for the 100th time? Try out FilmFinder and see what else is out there!</strong>
 
+## Features
+
 ### Movie Search:
 - <strong>Functionality:</strong> Users can enter the name of a movie in the search bar and click the "Search" button.
 - <strong>API Integration:</strong> The application interacts with The Movie Database (TMDb) API to fetch information about movies based on the user's input.
