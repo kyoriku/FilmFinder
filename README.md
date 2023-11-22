@@ -1,7 +1,6 @@
 # FilmFinder
 
 ## Description
-
 <strong>FilmFinder is a movie database web application that allows users to search for movies, view details about them, maintain a personalized watchlist, and discover the streaming platforms for each movie. The website features a clean and responsive UI for the user.</strong>
 
 The website draws your attentions upon loading with unique branding and engaging carousels of movie posters. It was our vision to simulate browsing your local movie theatre when deciding what movie to watch. The user can then click any genre they are interested in and easily add movies to their watchlist. Upon adding to the watchlist, user can see information about the movie's plot and where they can stream it. It is our intention so that when the user has completed watching a movie, they can revisit their watchlist and remove items individually. All watchlist items are stored locally to provide a seamless experience for the end user. 
@@ -9,7 +8,6 @@ The website draws your attentions upon loading with unique branding and engaging
 <strong>Tired of watching "The Office" for the 100th time? Try out FilmFinder and see what else is out there!</strong>
 
 ## Features
-
 ### Movie Search:
 - <strong>Functionality:</strong> Users can enter the name of a movie in the search bar and click the "Search" button.
 - <strong>API Integration:</strong> The application interacts with The Movie Database (TMDb) API to fetch information about movies based on the user's input.
@@ -22,7 +20,7 @@ The website draws your attentions upon loading with unique branding and engaging
 ### Movie Details:
 - <strong>Details Page:</strong> Clicking on a movie card redirects the user to a detailed page for that movie.
 - <strong>Information Provided:</strong> The details page displays comprehensive information about the selected movie, including its poster, title, tagline, release date, runtime, rating, and a description.
-- <strong>Streaming Sources:</strong> The page also uses WatchMode API to provide information about where the movie can be streamed, enhancing user convenience.
+- <strong>Streaming Sources:</strong> The page also uses Watchmode API to provide information about where the movie can be streamed, enhancing user convenience.
 
 ### Genre Filtering:
 - <strong>Genre Buttons:</strong> Users can filter movies by genre using genre buttons. Clicking on a genre button fetches and displays movies belonging to that genre.
@@ -42,5 +40,11 @@ The website draws your attentions upon loading with unique branding and engaging
 
 ## Credits
 - [TMDb API](https://developer.themoviedb.org/reference/intro/getting-started)
-- [WatchMode API](https://api.watchmode.com/docs/#api-reference)
+- [Watchmode API](https://api.watchmode.com/docs/#api-reference)
 - [Font Awesome](https://fontawesome.com/icons)
+
+## Contributors
+- [waltscode](https://github.com/waltscode)
+- [Samm1911](https://github.com/Samm1911)
+- [Matthew-Beaubien](https://github.com/Matthew-Beaubien)
+- [kyoriku](https://github.com/kyoriku)
