@@ -70,6 +70,7 @@ $(document).ready(function () {
       }
     });
   }
+  
   fetch(topRatedUrl)
     .then(function (response) {
       console.log(response);
