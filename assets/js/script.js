@@ -4,6 +4,13 @@ var movieDetailsContainerEl = $("#movie-details-container");
 var movieGenresEl = $(".movie-genres");
 var carouselContainerEl = $(".large-carousel-box")
 var genreBtnsContainerEl = $("#genre-btns-container")
+var watchlistContainerEl = $(".watchlist-container")
+var headerEl = $('.header-1')
+var nowPlayingContainerEl = $(".nowplaying-movies")
+var comingSoonContainerEl = $(".comingsoon-movies")
+var topRatedContainerEl = $(".toprated-movies")
+var aboutUsContainerEl = $("#about")
+var contactUsContainerEl = $(".container")
 
 // Array of genre buttons with their corresponding IDs and genre IDs
 var genreBtns = [
@@ -51,6 +58,13 @@ $(document).ready(function () {
           movieGenresEl.html('');
           carouselContainerEl.html('');
           genreBtnsContainerEl.html('');
+          watchlistContainerEl.html('');
+          headerEl.html('');
+          nowPlayingContainerEl.html('');
+          comingSoonContainerEl.html('');
+          topRatedContainerEl.html('');
+          aboutUsContainerEl.html('');
+          contactUsContainerEl.html('');
         } else {
           movieDetailsContainerEl.html('No movies found.');
         }
