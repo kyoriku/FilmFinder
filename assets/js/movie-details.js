@@ -1,4 +1,6 @@
+// Execute the following code once the HTML document is fully loaded
 $(document).ready(function () {
+
   // Extract movie ID from the URL using query parameters
   var movieId = extractMovieIdFromUrl();
 
@@ -10,6 +12,7 @@ $(document).ready(function () {
 
   // Fetch details for the specified movie ID from The Movie Database API
   function fetchMovieDetails(movieId) {
+    // URL for the API request using the provided movieId
     var apiUrl = `https://api.themoviedb.org/3/movie/${movieId}?api_key=b959be3036efe07cdd94c9fb04a40299`;
 
     // Fetch data from the API and handle the response
@@ -20,7 +23,7 @@ $(document).ready(function () {
       // Display movie details and log the data
       .then(function (data) {
         displayMovieDetails(data);
-        console.log(data)
+        console.log(data);
       })
       .catch(function (error) {
         console.error(error);
@@ -32,7 +35,7 @@ $(document).ready(function () {
     // DOM elements for various movie details
     var image = $("<img>").attr("src", `https://image.tmdb.org/t/p/w400${movie.poster_path}`);
     var title = $("<h2>").text(movie.title);
-    var tagline = $("<h2>").text(movie.tagline)
+    var tagline = $("<h2>").text(movie.tagline);
     var releaseDate = $(`<h2><span class="underline">Release Date:</span> ${formatReleaseDate(movie.release_date)}</h2>`);
     var runtime = $("<h2>").html(`<span class="underline">Runtime:</span> ${movie.runtime} Minutes`);
     var roundedRating = Math.round(movie.vote_average * 10) / 10;
