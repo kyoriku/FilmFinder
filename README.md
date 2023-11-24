@@ -34,7 +34,7 @@ The website draws your attentions upon loading with unique branding and engaging
 - <strong>Modular Approach:</strong> The code is organized into separate files for different pages (e.g., index.html, movie-details.html) and functionalities, following a modular and maintainable structure.
 
 ## Usage:
-> [Link to deployed appilcation](https://kyoriku.github.io/FilmFinder/)
+> [Link to deployed application](https://kyoriku.github.io/FilmFinder/)
 
 ![SCreenshot](assets/images/image.png)
 
