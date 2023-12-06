@@ -44,9 +44,9 @@
 
 @media screen and (max-width: 480px) {
   .genre-btn {
-    height: 6.25rem;
-    font-size: 16px;
-    width:  6.25rem;
+    height: 6.5rem;
+    font-size: 1rem;
+    width:  6.5rem;
   }
 
   .movie-card {
