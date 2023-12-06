@@ -29,6 +29,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 16px;
+  text-align: center;
 }
 
 /* Styling for individual genre buttons */
@@ -40,7 +41,7 @@ body {
   cursor: pointer;
   height: 140px;
   font-size: 26px;
-  margin: 5px 5px 5px 0;
+  margin: 5px 2.5px 5px 2.5px;
   width: 140px;
 }
 
