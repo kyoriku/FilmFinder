@@ -1,4 +1,4 @@
-@media screen and (max-width: 625px) {
+@media screen and (max-width: 768px) {
   .large-carousel-box {
     flex-direction: column;
   }
@@ -6,9 +6,7 @@
   .carousel-inner {
     margin-bottom: 10px;
   }
-}
 
-@media screen and (max-width: 768px) {
   .dropdown-content {
     top: 100%;
     width: 100vw;
@@ -35,26 +33,24 @@
     padding: 0;
   }
 
-  .genre-container {
-    text-align: center;
-  }
-
-  .genre-btn {
-    height: 115px;
-    font-size: 16px;
-    width:  115px;
-  }
-
-  .movie-card {
-    width: 185px;
-    padding: 5px;
-  }
-
   .add-to-watchlist-btn {
     width: 100%;
   }
 
   .about-container {
     width: 90vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .genre-btn {
+    height: 85px;
+    font-size: 16px;
+    width:  85px;
+  }
+
+  .movie-card {
+    width: 185px;
+    padding: 5px;
   }
 }
