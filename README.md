@@ -36,14 +36,17 @@ The website draws your attentions upon loading with unique branding and engaging
 ## Usage:
 > [Link to deployed application](https://kyoriku.github.io/FilmFinder/)
 
-![SCreenshot](assets/images/image.png)
+![Homepage](assets/screenshots/filmfinder-homepage.jpg)
+![Search](assets/screenshots/filmfinder-search.jpg)
+![Details](assets/screenshots/filmfinder-details.jpg)
+![Watchlist](assets/screenshots/filmfinder-watchlist.jpg)
 
 ## Credits
 - [TMDb API](https://developer.themoviedb.org/reference/intro/getting-started)
 - [Watchmode API](https://api.watchmode.com/docs/#api-reference)
 - [Font Awesome](https://fontawesome.com/icons)
 
-## Contributors
+## Developers
 - [waltscode](https://github.com/waltscode)
 - [Samm1911](https://github.com/Samm1911)
 - [Matthew-Beaubien](https://github.com/Matthew-Beaubien)
