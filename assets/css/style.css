@@ -26,29 +26,83 @@ body {
 /* Genre button container styling */
 .genre-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 16px;
-  text-align: center;
+  gap: 15px;
 }
 
 /* Styling for individual genre buttons */
 .genre-btn {
-  background-color: #333333;
-  border: 2px solid #0d6efd;
-  border-radius: 99px;
+  background: linear-gradient(135deg, #0d6efd, #6f42c1);
+  border: none;
+  border-radius: 50px;
   color: #ffffff;
   cursor: pointer;
-  height: 140px;
-  font-size: 26px;
-  margin: 5px 2.5px 5px 2.5px;
-  width: 140px;
+  font-size: 20x;
+  font-weight: bold;
+  padding: 12px 24px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Pseudo-element for hover effect */
+.genre-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #6f42c1, #0d6efd);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+/* Text container to keep it above the hover effect */
+.genre-btn span {
+  position: relative;
+  z-index: 2;
+  font-size: 18px;
 }
 
 /* Hover effect for genre buttons */
 .genre-btn:hover {
-  background-color: #0d6efd;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
+
+.genre-btn:hover::before {
+  left: 0;
+}
+
+/* Active state for better UX */
+.genre-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus state for accessibility */
+.genre-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.5);
+}
+
+/* Optional: Add a subtle pulse animation */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.genre-btn:hover {
+  animation: pulse 1s infinite;
+}
+
+
 
 /* Container for displaying movies */
 .movies-container {
@@ -154,11 +208,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px;
+  height: 48px;
   width: auto;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  margin-left: 16px
 }
 
-img.glow-logo {
-  margin-top: -16px;
-}
+/* img.glow-logo {
+  margin-top: 16px;
+} */

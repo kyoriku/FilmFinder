@@ -43,11 +43,11 @@
 }
 
 @media screen and (max-width: 480px) {
-  .genre-btn {
+  /* .genre-btn {
     height: 7rem;
     font-size: 1rem;
     width:  7rem;
-  }
+  } */
 
   .movie-card {
     width: 185px;
