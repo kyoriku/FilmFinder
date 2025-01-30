@@ -21,6 +21,7 @@
 - [Developers](#developers)
 - [Credits](#credits)
 - [License](#license)
+- [Questions](#questions)
 
 ## Description
 FilmFinder is a comprehensive movie discovery platform that combines multiple API integrations to create an immersive movie browsing experience. Built with TMDb and Watchmode APIs, this project demonstrates effective API implementation while providing users with a powerful tool for exploring and tracking movies.
@@ -176,3 +177,6 @@ Built with knowledge from the following resources:
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge&logo=mit)](https://opensource.org/licenses/MIT)
 
 This project is licensed under the [MIT](https://opensource.org/licenses/MIT) license - see the LICENSE file for details.
+
+## Questions
+For any questions, feel free to email me at devkyoriku@gmail.com.
