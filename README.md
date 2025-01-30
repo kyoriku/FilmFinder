@@ -156,10 +156,10 @@ Please ensure your contributions:
 * Include clear descriptions in your pull request
 
 ## Developers
-* [waltscode](https://github.com/waltscode)
-* [Samm1911](https://github.com/Samm1911)
-* [Matthew-Beaubien](https://github.com/Matthew-Beaubien)
-* [kyoriku](https://github.com/kyoriku)
+* [![kyoriku](https://img.shields.io/badge/kyoriku-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kyoriku) - Lead Developer: Core API Integration, Search Functionality, Watchlist System, Movie Cards & Details
+* [![waltscode](https://img.shields.io/badge/waltscode-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/waltscode) - UI/UX Design, Carousel Implementation, Watchlist Removal Feature
+* [![Samm1911](https://img.shields.io/badge/Samm1911-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Samm1911) - About Us Page Development
+* [![Matthew--Beaubien](https://img.shields.io/badge/Matthew--Beaubien-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Matthew-Beaubien) - Navigation System Implementation
 
 ## Credits
 Built with knowledge from the following resources:
